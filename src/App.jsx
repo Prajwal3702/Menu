@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About us/About";
-import Menu from "./components/Menu/Menu";
-import Reviews from "./components/Reviews/Reviews";
-import Gallery from "./components/Gallery/Gallery";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Home from "./components/Home/Home.jsx";
+import About from "./components/Aboutus/About.jsx";
+import Menu from "./components/Menu/Menu.jsx";
+import Reviews from "./components/Reviews/Reviews.jsx";
+import Gallery from "./components/Gallery/Gallery.jsx";
 const App = () => {
   return (
     <div>
