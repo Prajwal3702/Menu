@@ -1,0 +1,59 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.review-title{
+  position: relative;
+}
+
+.review-title h1{
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 400;
+  color: rgb(123, 61, 6);
+}
+.review-sections{
+  display: flex;
+  gap: 80px;
+  margin-left: 200px;
+}
+.review-left h3{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size:16px;
+  font-weight: 500;
+  color: black;
+  margin-right: 150px;
+}
+.review-right{
+    display: flex;
+    flex-direction: column;
+}
+.review-right h3{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size:16px;
+  font-weight: 500;
+  color: black;
+  margin-right: 150px;
+}
+
+.review-mid{
+  display: flex;
+  flex-direction: column;
+}
+.review-mid h3{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size:16px;
+  font-weight: 500;
+  color: black;
+  margin-right: 150px;
+}

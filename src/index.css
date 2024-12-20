@@ -1,0 +1,11 @@
+*{
+  margin: -20px;;
+  padding: -20px;;
+}
+
+body{
+  height: 100vh;
+  background: rgb(248, 244, 244);
+  color: white;
+  font-family: 'outfit';
+}

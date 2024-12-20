@@ -1,0 +1,43 @@
+.navbar{
+  padding-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 100px;
+
+}
+.nav-menu{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 250px;
+  align-items: center;
+  list-style: none;
+  gap: 140px;
+  font-size: 18px;
+}
+.nav-menu p{
+  width: 100px;
+  padding-right: -20px;
+  margin: -15px;
+  font-size: 25px;
+
+}
+.nav-connect:hover{
+  transform: scale(1.05);
+}
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  display: 5px;
+  cursor: pointer;
+}
+.nav-menu li img{
+  position: relative;
+  height: 10px;
+  display: flex;
+  margin-top: 5px;
+}
+.anchor-link{
+  text-decoration: none;
+  color: rgb(123, 61, 6);
+}
