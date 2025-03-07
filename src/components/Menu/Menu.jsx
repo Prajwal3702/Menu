@@ -9,6 +9,7 @@ const Menu = () => {
         <div className="menu-title">
           <h1>Menu</h1>
         </div>
+        s
       </div>
       <div className="menu-sections">
         <div className="menu-left">

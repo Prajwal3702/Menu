@@ -3,6 +3,7 @@ import "./Navbar.css";
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from "react";
 import logo from "../../assets/logo.png";
+import { IoLocation } from "react-icons/io5";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -40,6 +41,13 @@ const Navbar = () => {
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
             <p onClick={() => setMenu("contact")}>Contact</p>
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className="anchor-link-icon" offset={50} href="#location">
+            <p onClick={() => setMenu("location")}>
+              <IoLocation />
+            </p>
           </AnchorLink>
         </li>
       </ul>

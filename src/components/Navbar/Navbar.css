@@ -1,4 +1,8 @@
-.navbar{
+
+
+
+
+ .navbar{
   padding-left: 300px;
   display: flex;
   align-items: center;
@@ -9,19 +13,33 @@
 .nav-menu{
   display: flex;
   margin-top: 40px;
-  margin-left: 250px;
+  margin-left: 190px;
   align-items: center;
   list-style: none;
   gap: 140px;
   font-size: 18px;
 }
-.nav-menu p{
-  width: 100px;
-  padding-right: -20px;
-  margin: -15px;
-  font-size: 25px;
-
+.nav-menu p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b390a;
+  margin: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
 }
+.nav-menu p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #b35e10 0%, #ff8c1a 100%);
+  transition: width 0.3s ease;
+} 
 .nav-connect:hover{
   transform: scale(1.05);
 }
@@ -38,6 +56,92 @@
   margin-top: 5px;
 }
 .anchor-link{
+  display: block;
   text-decoration: none;
   color: rgb(123, 61, 6);
+  transition: 5s;
+  border: 16px  rgb(199, 147, 102);
+  transform: scale(1 );
+  transition: 1.4s;
+  background-color: transparent;
+  box-sizing: border-box;
+    padding: .5rem 1rem;
+    
 }
+.nav-menu li:hover p {
+  color: #ff8c1a;
+}
+
+.nav-menu li:hover p::after {
+  width: 100%;
+}
+
+.nav-menu li.active p {
+  color: #ff8c1a;
+}
+
+.nav-menu li.active p::after {
+  width: 100%;
+}
+.anchor-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #b35e10;
+  font-size: 800rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 80px;
+}
+
+.anchor-link-icon:hover {
+  color: #ff8c1a; 
+  transform: translateY(-2px);
+  background: rgba(179, 94, 16, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: -100%;
+    right: 0;
+    flex-direction: column;
+    background: rgba(255, 245, 230, 0.98);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: calc(100vh - 72px);
+    padding: 2rem 0;
+    transition: 0.3s ease-in-out;
+  }
+  .anchor-link-icon {
+    font-size: 1.25rem;
+    width: 35px;
+    height: 35px;
+  }
+}
+.navbar {
+  padding: 1rem;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+.nav-logo {
+  height: 40px;
+}
+
+.anchor-link {
+  font-size: 1.1rem;
+}
+
+
+
+
